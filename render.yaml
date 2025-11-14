@@ -1,9 +1,11 @@
 services:
   - type: web
-    name: ai-recommendation-api-1
+    name: ai-recommendation-api-2
     env: python
     plan: free
     region: singapore
-    pythonVersion: "3.11"
-    buildCommand: pip install -r requirements.txt
+    pythonVersion: "3.13"
+    buildCommand: |
+      pip install --upgrade pip setuptools wheel
+      pip install -r requirements.txt
     startCommand: gunicorn app:app
