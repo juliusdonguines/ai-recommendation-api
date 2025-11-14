@@ -1,5 +1,6 @@
-Flask==2.3.2
-gunicorn==20.1.0
-scikit-learn==1.3.2
-numpy==1.26.3
-pandas==2.2.3
+Flask==2.3.4
+scikit-learn==1.3.2   # prebuilt wheels, avoids compilation issues
+pandas==2.1.1
+numpy==1.27.5
+scipy==1.12.1
+gunicorn==21.2.0
